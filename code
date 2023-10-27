@@ -1,0 +1,31 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int i = 1, n, a, pc, s = 0;
+    
+    cin >> n;
+    
+    while(i <= n)
+    {
+        cin >> a;
+        
+        while(a > 9)
+        {
+            a = a / 10;
+        }
+        
+        pc = a % 10;
+        
+        s = s + pc;
+        
+        i++;
+    
+    }
+    
+    cout << s;
+
+    return 0;
+}
